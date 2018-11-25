@@ -1,1 +1,13 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+<%= form_tag students_path, class: "navbar-form navbar-left search-form" do %>
+<label>First Name</label>
+  <%= text_field_tag(
+      :first_name,
+      class: "form-control"
+  ) %><br><br>
+
+  <label>Last Name</label>
+  <%= text_field_tag :'last_name', class: "form-control" %>
+
+  <%= submit_tag "Submit Student" %>
+<% end %>
